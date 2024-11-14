@@ -1,0 +1,25 @@
+
+    {% if is_target_word %}
+    <ruby class="target_kanji">{{group[0]}}
+        <rp>(</rp>
+        <rt class="target_furigana">{{group[1]}}</rt>
+        <rp>)</rp>
+
+    </ruby>
+    <span class="target_okurigana">
+        {{group[2]}}
+    </span>
+
+    {% else %}
+
+    <ruby class="kanji">{{group[0]}}
+        <rp>(</rp>
+        <rt class="furigana">{{group[1]}}</rt>
+        <rp>)</rp>
+
+    </ruby>
+    <span class="okurigana">
+        {{group[2]}}
+    </span>
+
+    {% endif %}
